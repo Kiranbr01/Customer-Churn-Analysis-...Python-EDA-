@@ -66,7 +66,31 @@ The dataset includes:
 ### ✔ Binary Column Conversion  
 Converted numeric indicators → readable categories:
 
+---
+
+# 🔍 Exploratory Data Analysis (EDA)
+
+The EDA phase is the core of this project.  
+It includes data inspection, cleaning, statistical summaries, visual exploration, and insight extraction.
+
+This section highlights:
+- ✔ Data structure understanding  
+- ✔ Distribution analysis  
+- ✔ Categorical vs numerical behavior  
+- ✔ Churn segmentation  
+- ✔ Pattern discovery  
+- ✔ Visualization + Interpretation  
+
+---
+
+## 📌 1. Importing Libraries & Loading Dataset
+
 ```python
-def conv(x):
-    return "yes" if x == 1 else "no"
-df['SeniorCitizen'] = df['SeniorCitizen'].apply(conv)
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("Telco-Customer-Churn.csv")
+df.head()
+
