@@ -83,14 +83,41 @@ This section highlights:
 
 ---
 
-## 📌 1. Importing Libraries & Loading Dataset
+# 📁 Dataset Description
 
-```python
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
+The dataset includes 21 features grouped into:
 
-df = pd.read_csv("Telco-Customer-Churn.csv")
-df.head()
+### 👥 Demographics
+- Senior Citizen  
+- Partner  
+- Dependents  
+
+### 📡 Services
+- Phone, Internet, Security  
+- Backup, Device Protection  
+- Tech Support, TV, Movies  
+
+### 💳 Billing & Account Info
+- Monthly Charges  
+- Total Charges  
+- Contract Type  
+- Payment Method  
+- Tenure  
+
+### 🎯 Target Variable
+- **Churn (Yes/No)**  
+
+---
+
+# 🧼 Data Cleaning & Preparation
+
+### ✔ Missing Values Fix  
+`TotalCharges` contained blank strings → converted to numeric + imputed.
+
+### ✔ Binary Variable Conversion  
+`SeniorCitizen`: 0/1 → Yes/No  
+All categorical fields cleaned and stripped.
+
+### ✔ Outlier Inspection  
+Retained outliers in charges → they represent real customer behavior.
 
