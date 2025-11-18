@@ -24,7 +24,7 @@ Telecom churn affects:
 - Market competitiveness  
 
 Understanding *who* is leaving and *why* helps businesses design effective retention strategies.  
-This project approaches churn from **data, customer behavior, and business perspective** → something recruiters love to see.
+This project approaches churn from **data, customer behavior, and business perspective**
 
 ---
 
